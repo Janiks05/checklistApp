@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: #1E2124;
+    color: white;
+}
+
+main {
+    width: 95vw;
+    margin: auto;
+}
+
+main header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main header h1 {
+    font-size: 48px;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 40vw;
+}
+
+main header .basics-wrapper .basics {
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-left: 10vw;
+    padding: 10px;
+    background-color: #282B30;
+    border-radius: 30px 0px 30px 30px;
+    width: 35vw;
+}
+
+main header .basics-wrapper .basics h3 {
+    font-size: 15px;
+}
+
+main header .basics-wrapper .basics h3 a {
+    font-size: 15px;
+    color: #5865F2;
+    text-decoration: dotted;
+}
+
+
+main .dailys {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+main .dailys .daily {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    font-size: 1rem;
+}
+
+main .dailys .daily header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .dailys .daily header .del-btn {
+    width: 4vw;
+    height: 4vw;
+    background-color: red;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main .dailys .daily header .add-btn {
+    width: 4vw;
+    height: 4vw;
+    background-color: #57F287;
+    border-radius: 10px;
+    text-align: center;
+}
+
+main .dailys .daily {
+    width: 30vw;
+    height: 30vw;
+    background: #5865F2;
+    border-radius: 21px;
+    margin: auto;
+    margin-top: 3vh;
+}
+
+footer {
+    background-color: #282B30;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+}
+
+footer #library {
+    background-color: #5865f262;
+    border-radius: 5px;
+}
+
+footer #main-frame {
+    background-color: #E7CACA62;
+    border-radius: 5px;
+}
+
+footer #emergency {
+    background-color: #fd050562;
+    border-radius: 5px;
+}
+
+.checklist {
+    width: 100vw;
+    height: 97vh;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: #282B30;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.checklist header {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3em;
+
+}
+
+.checklist ul {
+    margin: 2em;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+.checklist ul ol {
+    list-style-type: circle;
+    margin-left: 2rem;
+}
+
+.invisible {
+    display: none;
+}
+
+/*check items just for testing*/
+.check-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.check-item .type {
+    list-style-type: none;
+}
+
+.check-item li:first-of-type {
+    list-style-type: disc;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.check-item li:first-of-type::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    border-bottom: 3px dotted rgb(255, 255, 255);
+}

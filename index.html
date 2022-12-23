@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Daily</title>
+</head>
+
+
+<body>
+    <div class="checklist invisible">
+        <header>
+            <h1>Morning routine</h1>
+            <img src="./img/closeX.png" alt="" onclick="removeChecklist()">
+        </header>
+        <ul>
+            <li>Make the bed</li>
+            <li>Drink 1/2l</li>
+            <li>Cold shower 2 min</li>
+            <li>check todays eventss</li>
+            <li>Pack things</li>
+            <ol>
+                <li>laptop</li>
+                <li>pencil case</li>
+            </ol>
+
+            <div class="check-item">
+                <li>windows closed</li>
+                <li class="type">check</li>
+            </div>
+
+        </ul>
+    </div>
+    <main id="main">
+        <header>
+            <h1>Hi, Janik</h1>
+            <div class="basics-wrapper">
+                <div class="basics">
+                    <h3 id="dateelement">Date: </h3>
+                    <h3 id="timeofday">Time: </h3>
+                    <h3><a href="https://calendar.google.com/calendar/u/0/r/day">Events</a></h3>
+                </div>
+
+            </div>
+        </header>
+        <div class="dailys">
+            <div class="daily" onclick="getChecklist('morningroutine')">
+                <header>
+                    <h2>Morning <br>routine</h2>
+                    <div class="del-btn"></div>
+                </header>
+
+                <img src="./img/bed.png" alt="">
+            </div>
+
+            <div class="daily">
+                <header>
+                    <h2>Tire <br>change</h2>
+                    <div class="add-btn"></div>
+                </header>
+                <img src="./img/tire-repair.png" alt="">
+            </div>
+
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-item" id="library"><img src="./img/library.png" alt=""></div>
+        <div class="footer-item" id="main-frame"><img src="./img/main-frame.png" alt=""></div>
+        <div class="footer-item" id="emergency"><img src="./img/emergency-light.png" alt=""></div>
+    </footer>
+</body>
+<script src="./js/basics.js"></script>
+<script src="./js/getChecklist.js"></script>
+
+</html>
