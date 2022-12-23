@@ -6,9 +6,9 @@ let checklist = document.querySelector('.checklist')
 
 //gibt checkliste aus 
 function getChecklist() {
+    checklist.classList.remove('invisible')
     footer.classList.add('invisible')
     main.classList.add('invisible')
-    checklist.classList.remove('invisible')
 
     fetch('https://checklist-daily-api.onrender.com/')
         .then((response) => response.json())
@@ -19,7 +19,8 @@ function getChecklist() {
 function removeChecklist() {
     footer.classList.remove('invisible')
     main.classList.remove('invisible')
-    checklist.classList.add('invisible')
+    checklist.classList.add('removed-checklist')
+    setTimeout(checklist.classList.add('invisible'), 200)
 }
 
 

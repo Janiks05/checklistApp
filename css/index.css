@@ -129,6 +129,31 @@ footer #emergency {
     position: fixed;
     background-color: #282B30;
     border-radius: 20px 20px 0px 0px;
+    animation: checklistAnim 0.3s normal none;
+}
+
+@keyframes checklistAnim {
+    from {
+        bottom: -100vh;
+    }
+
+    to {
+        bottom: 0;
+    }
+}
+
+.removed-checklist {
+    animation: removeChecklistAnim duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes removeChecklistAnim {
+    from {
+        bottom: 0;
+    }
+
+    to {
+        bottom: -100vh;
+    }
 }
 
 .checklist header {
