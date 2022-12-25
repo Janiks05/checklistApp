@@ -15,6 +15,7 @@ function emergencyChecklist(typeOfEmergency) {
     //get the type of the emergency and return the related checklist
     if (typeOfEmergency == 'reanimation') {
 
+    } else if (typeOfEmergency == 'caraccident') {
     }
 }
 
@@ -25,5 +26,5 @@ function removeChecklist() {
     main.classList.remove('invisible')
 
     //entfernt den content 
-    document.querySelector('#checklist-list').innerHTML = ''
+    //document.querySelector('#checklist-list').innerHTML = ''
 }
