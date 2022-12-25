@@ -12,16 +12,19 @@
 </head>
 
 <body>
+
     <div class="checklist invisible">
         <header>
-            <h1>Morning routine</h1>
+            <h1 id="emergency-headline"></h1>
             <img src="./img/closeX.png" alt="" onclick="removeChecklist()">
         </header>
-        <ul id="checklist-list">
+        <div id="checklist-list">
             <!--Hier ist der Content der Checkliste-->
-        </ul>
+        </div>
     </div>
+
     <main id="main">
+
         <header>
             <h1 id="name-headline">Hi, </h1>
             <div class="basics-wrapper">
@@ -31,43 +34,45 @@
 
             </div>
         </header>
+
         <div class="dailys">
-            <div class="daily">
+            <div class="daily" onclick="emergencyChecklist('reanimation')">
                 <header>
                     <h2>Reanim- <br>ation</h2>
                 </header>
-
-                <img src="./img/emergency.png" alt="">
+                <img src="./img/puls.png" alt="">
             </div>
 
             <div class="daily">
                 <header>
-                    <h2>Tire <br>change</h2>
+                    <h2>car <br>accident</h2>
                 </header>
-                <img src="./img/tire-repair.png" alt="">
-            </div>
-            <div class="daily">
-                <header>
-                    <h2>Tire <br>change</h2>
-                </header>
-                <img src="./img/tire-repair.png" alt="">
-            </div>
-            <div class="daily">
-                <header>
-                    <h2>Tire <br>change</h2>
-                </header>
-                <img src="./img/tire-repair.png" alt="">
+                <img src="./img/carAccident.png" alt="">
             </div>
 
+            <div class="daily">
+                <header>
+                    <h2>recovery <br> position</h2>
+                </header>
+                <img src="./img/lung.png" alt="">
+            </div>
         </div>
+
     </main>
 
     <footer id="footer">
-        <a href=""><div class="footer-item" id="library"><img src="./img/library.png" alt=""></div></a>
-        <a href="./index.html"><div class="footer-item" id="main-frame"><img src="./img/main-frame.png" alt=""></div></a>
-        <a href="./medEmer.html"><div class="footer-item" id="emergency"><img src="./img/emergency-light.png" alt=""></div></a>
+        <a href="">
+            <div class="footer-item" id="library"><img src="./img/library.png" alt=""></div>
+        </a>
+        <a href="./index.html">
+            <div class="footer-item" id="main-frame"><img src="./img/main-frame.png" alt=""></div>
+        </a>
+        <a href="./medEmer.html">
+            <div class="footer-item" id="emergency"><img src="./img/emergency-light.png" alt=""></div>
+        </a>
     </footer>
 </body>
-<script src="./js/basics.js"></script>
+<script src="./js/emergencyChecklist.js"></script>
 <script src="./js/name.js"></script>
+
 </html>
