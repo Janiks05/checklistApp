@@ -4,26 +4,21 @@ const main = document.querySelector('#main')
 
 let checklist = document.querySelector('.checklist')
 
-//gibt checkliste aus 
+//gibt checkliste mit daten der API aus 
 function getChecklist() {
+    //animation für die einblendende Checkliste
     checklist.classList.remove('removed-checklist')
     checklist.classList.add('checklist')
     checklist.classList.remove('invisible')
     footer.classList.add('invisible')
     main.classList.add('invisible')
-
-    fetch('https://checklist-daily-api.onrender.com/')
-        .then((response) => response.json())
-        .then((data) => console.log(data));
 }
 
 //schließt checkliste --x zurück zur Hauptseite
+//animation für die ausblendende Checkliste
 function removeChecklist() {
-    
     checklist.classList.add('removed-checklist')
     setTimeout(()=>{checklist.classList.add('invisible')}, 100)
     footer.classList.remove('invisible')
     main.classList.remove('invisible')
 }
-
-
