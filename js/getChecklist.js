@@ -12,6 +12,30 @@ function getChecklist() {
     checklist.classList.remove('invisible')
     footer.classList.add('invisible')
     main.classList.add('invisible')
+
+    //get data from api
+    fetch('https://checklist-daily-api.onrender.com/')
+        .then(res => {
+            return res.json();
+        })
+        .then(data => console.log(data.morningrout.forEach(task => {
+            let markup;
+            if (task.length >= 2) {
+                for (let i = 0; i < task.length; i++) {
+                    if (i == 0) {
+                        markup = `<li>${task[i]}</li>`
+                    } else {
+                        markup = `<li>${task[i]}</li>` //soll eingerückt sein
+                    }
+                    document.querySelector('ul').innerHTML += markup
+                }
+            } else {
+                markup = `<li>${task[0]}</li>`
+                document.querySelector('ul').innerHTML += markup
+
+            }
+
+        })));
 }
 
 //schließt checkliste --x zurück zur Hauptseite
