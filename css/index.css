@@ -65,22 +65,6 @@ main .dailys .daily header {
     justify-content: space-between;
 }
 
-main .dailys .daily header .del-btn {
-    width: 4vw;
-    height: 4vw;
-    background-color: red;
-    border-radius: 10px;
-    text-align: center;
-}
-
-main .dailys .daily header .add-btn {
-    width: 4vw;
-    height: 4vw;
-    background-color: #57F287;
-    border-radius: 10px;
-    text-align: center;
-}
-
 main .dailys .daily {
     width: 30vw;
     height: 30vw;
