@@ -121,7 +121,7 @@ footer #emergency {
     border-radius: 5px;
 }
 
-.checklist {
+.checklist, .removed-checklist{
     width: 100vw;
     height: 97vh;
     bottom: 0;
@@ -129,6 +129,9 @@ footer #emergency {
     position: fixed;
     background-color: #282B30;
     border-radius: 20px 20px 0px 0px;
+}
+
+.checklist {
     animation: checklistAnim 0.3s normal none;
 }
 
@@ -143,7 +146,7 @@ footer #emergency {
 }
 
 .removed-checklist {
-    animation: removeChecklistAnim duration timing-function delay iteration-count direction fill-mode;
+    animation: removeChecklistAnim 0.3s normal none;
 }
 
 @keyframes removeChecklistAnim {

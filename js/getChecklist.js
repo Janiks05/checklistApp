@@ -6,6 +6,8 @@ let checklist = document.querySelector('.checklist')
 
 //gibt checkliste aus 
 function getChecklist() {
+    checklist.classList.remove('removed-checklist')
+    checklist.classList.add('checklist')
     checklist.classList.remove('invisible')
     footer.classList.add('invisible')
     main.classList.add('invisible')
@@ -17,10 +19,11 @@ function getChecklist() {
 
 //schließt checkliste --x zurück zur Hauptseite
 function removeChecklist() {
+    
+    checklist.classList.add('removed-checklist')
+    setTimeout(()=>{checklist.classList.add('invisible')}, 100)
     footer.classList.remove('invisible')
     main.classList.remove('invisible')
-    checklist.classList.add('removed-checklist')
-    setTimeout(checklist.classList.add('invisible'), 200)
 }
 
 
