@@ -18,7 +18,7 @@ function getChecklist(checklistType) {
         .then(res => {
             return res.json();
         })
-        .then(data => console.log(data.checklistType.forEach(task => {
+        .then(data => console.log(data.forEach(task => {
             let markup;
             if (task.length >= 2) {
                 for (let i = 0; i < task.length; i++) {
@@ -45,4 +45,7 @@ function removeChecklist() {
     setTimeout(()=>{checklist.classList.add('invisible')}, 100)
     footer.classList.remove('invisible')
     main.classList.remove('invisible')
+
+    //entfernt den content 
+    document.querySelector('#checklist-list').innerHTML = ''
 }
