@@ -6,17 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
-    <ul></ul>
+    <ul>
+    </ul>
 </body>
 <script>
     fetch('https://checklist-daily-api.onrender.com/')
         .then(res => {
             return res.json();
         })
-        .then(data => console.log(data.morningrout[0].step1))
+        .then(data => console.log(data.morningrout.forEach(task => {
+            let markup;
+            if (task.length >= 2) {
+                for (let i = 0; i < task.length; i++) {
+                    if (i == 0) {
+                        markup = `<li>${task[i]}</li>`
+                    } else {
+                        markup = `<li class="red">${task[i]}</li>`
+                    }
+                    document.querySelector('ul').innerHTML += markup
+
+                    console.log("ist länger!!! Alrm")
+                }
+            } else {
+                markup = `<li>${task[0]}</li>`
+                document.querySelector('ul').innerHTML += markup
+
+            }
+
+        })));
 </script>
 
 </html>
