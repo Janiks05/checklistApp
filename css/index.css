@@ -39,7 +39,8 @@ main header .basics-wrapper .basics {
     width: 35vw;
 }
 
-main header .basics-wrapper .basics h3, main header .basics-wrapper .basics h3 a {
+main header .basics-wrapper .basics h3,
+main header .basics-wrapper .basics h3 a {
     font-size: 15px;
 }
 
@@ -103,7 +104,8 @@ footer #emergency {
     border-radius: 5px;
 }
 
-.checklist, .removed-checklist{
+.checklist,
+.removed-checklist {
     width: 100vw;
     height: 97vh;
     bottom: 0;
@@ -150,8 +152,16 @@ footer #emergency {
 
 .checklist ul {
     margin: 2em;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 2rem;
+}
+
+.checklist ul li {
+    font-weight: 700;
+}
+
+.checklist ul ol li {
+    font-weight: lighter;
 }
 
 .checklist ul ol {
