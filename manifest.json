@@ -1,0 +1,10 @@
+{
+    "theme_color": "#5865F2",
+    "background_color": "#1E2124",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Checklist-App",
+    "short_name": "Checklist-App",
+    "description": "app for checklists in your daily life"
+}
