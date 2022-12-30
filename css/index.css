@@ -113,6 +113,7 @@ footer #emergency {
     position: fixed;
     background-color: #282B30;
     border-radius: 20px 20px 0px 0px;
+    overflow-y: scroll;
 }
 
 .checklist {
