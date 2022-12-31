@@ -151,6 +151,11 @@ footer #emergency {
 
 }
 
+.checklist header img {
+    width: 48px;
+    height: auto;
+}
+
 .checklist ul {
     margin: 2em;
     font-size: 1.2rem;
