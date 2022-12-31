@@ -13,6 +13,7 @@ function getChecklist(checklistType) {
     checklist.classList.remove('invisible')
     footer.classList.add('invisible')
     main.classList.add('invisible')
+    checklistHeadlinei.innerHTML = ''
 
     //get data from api
     fetch(`https://checklist-daily-api.onrender.com/${checklistType}`)
