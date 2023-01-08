@@ -29,7 +29,15 @@ function getChecklist(checklistType) {
                 if (task.length >= 2) {
                     for (let i = 0; i < task.length; i++) {
                         if (i == 0) {
-                            markup = `<li>${task[i]}</li>`
+                            if (task[i] == "check-item") {
+                                markup = `<div class="check-item">
+                        <li>${task[1]}</li>
+                        <li>${task[2]}</li>
+                        </div>`
+                                i = 2
+                            } else {
+                                markup = `<li>${task[i]}</li>`
+                            }
                         } else {
                             markup = `<ol><li>${task[i]}</li></ol>` //soll eingerückt sein
                         }

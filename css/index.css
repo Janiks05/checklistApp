@@ -184,11 +184,9 @@ footer #emergency {
     display: flex;
     justify-content: space-between;
     width: 100%;
-}
-
-.check-item .type {
     list-style-type: none;
 }
+
 
 .check-item li:first-of-type {
     list-style-type: disc;
