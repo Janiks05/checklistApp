@@ -59,6 +59,7 @@ main .dailys .daily {
     padding-right: 2vw;
     padding-top: 1vh;
     font-size: 1rem;
+    line-break: auto;
 }
 
 main .dailys .daily header {
