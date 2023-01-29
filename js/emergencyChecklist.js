@@ -17,13 +17,13 @@ function emergencyChecklist(typeOfEmergency) {
     //get the type of the emergency and return the related checklist
     if (typeOfEmergency == 'reanimation') {
         checklist.innerHTML = `<header>
-        <h1 id="emergency-headline">reanimation</h1>
+        <h1 id="emergency-headline">Reanimation</h1>
         <img src="./img/closeX.png" alt="" onclick="removeChecklist()">
     </header>
     <div id="checklist-list">
         <ul>
             <li>check patient (reaction & breath)</li>
-            <li>Clear the airway</li>
+            <li>clear the airway</li>
             <ol>
                 <li>stretch the patient's head slightly backwards</li>
                 <li>lift his chin</li>
@@ -55,7 +55,7 @@ function emergencyChecklist(typeOfEmergency) {
 
     } else if (typeOfEmergency == 'caraccident') {
         checklist.innerHTML = ` <header>
-        <h1 id="emergency-headline">car accident</h1>
+        <h1 id="emergency-headline">Car accident</h1>
         <img src="./img/closeX.png" alt="" onclick="removeChecklist()">
     </header>
     <div id="checklist-list">
