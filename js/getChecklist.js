@@ -14,7 +14,7 @@ function getAndDisplayChecklistMainFrame() {
         .then(data => {
             for (let i = 0; i < data.length; i++) {
 
-                if (data[i][0] !== '') {
+                if (data[i][0] !== 0) {
                     console.log(data[i]);
 
                     dailys.innerHTML += `
