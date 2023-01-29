@@ -54,14 +54,6 @@ main .dailys {
     grid-template-columns: auto auto;
 }
 
-main .dailys .daily {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 1vh;
-    font-size: 1rem;
-    line-break: auto;
-}
-
 main .dailys .daily header {
     display: flex;
     justify-content: space-between;
@@ -74,6 +66,11 @@ main .dailys .daily {
     border-radius: 21px;
     margin: auto;
     margin-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    font-size: 1rem;
+    line-break: auto;
 }
 
 footer {
@@ -202,4 +199,18 @@ footer #emergency {
     bottom: 3px;
     width: 100%;
     border-bottom: 3px dotted rgb(255, 255, 255);
+}
+
+.emptydaily {
+    width: 30vw;
+    height: 30vw;
+    background: #5865f200;
+    border-radius: 21px;
+    margin: auto;
+    margin-top: 3vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    font-size: 1rem;
+    line-break: auto;
 }
