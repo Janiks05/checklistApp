@@ -1,3 +1,8 @@
+body {
+    overflow: hidden;
+    /* Hide scrollbars */
+}
+
 header input {
     margin: auto;
     margin-top: 2vh;

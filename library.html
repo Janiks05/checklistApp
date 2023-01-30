@@ -13,7 +13,7 @@
 <body>
     <div class="checklist invisible">
         <header>
-            <h1>Morning routine</h1>
+            <h1 id="checklist-headline"></h1>
             <img src="./img/closeX.png" alt="" onclick="removeChecklist()">
         </header>
         <ul id="checklist-list">
@@ -22,27 +22,10 @@
     </div>
     <main id="main">
         <header>
-            <input type="text" placeholder="search..." id="searchbar">
+            <input type="text" placeholder="search..." id="searchbar" data-search>
         </header>
 
-        <div class="dailys">
-            <div class="daily" onclick="getChecklist('morningrout')">
-                <header>
-                    <h2>Morning <br>routine</h2>
-                    <div class="del-btn"></div>
-                </header>
-
-                <img src="./img/bed.png" alt="">
-            </div>
-
-            <div class="daily">
-                <header>
-                    <h2>Tire <br>change</h2>
-                    <div class="add-btn"></div>
-                </header>
-                <img src="./img/tire-repair.png" alt="">
-            </div>
-
+        <div class="dailys" id="dailys">
         </div>
     </main>
     <footer id="footer">
@@ -56,6 +39,9 @@
             <div class="footer-item" id="emergency"><img src="./img/emergency-light.png" alt=""></div>
         </a>
     </footer>
+    <script src="./js/getChecklist.js"></script>
+    <script src="./js/searchbar.js"></script>
+
 </body>
 
 </html>
