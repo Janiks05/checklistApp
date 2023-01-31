@@ -7,7 +7,7 @@ let checklistHeadline = document.querySelector('#checklist-headline')
 const dailys = document.querySelector('#dailys')
 
 function getAndDisplayChecklistMainFrame() {
-    fetch('https://checklist-daily-api.onrender.com/')
+    fetch('https://checklist-daily-api.onrender.com/mainpage')
         .then(res => {
             return res.json()
         })
