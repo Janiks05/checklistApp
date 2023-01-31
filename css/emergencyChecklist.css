@@ -4,6 +4,23 @@
     font-family: 'Rubik', sans-serif;
 }
 
+body {
+    overflow-y: scroll;
+    margin-bottom: 10vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 main header .basics-wrapper .basics h3 a {
     font-size: 1.4rem;
     color: #FF7979;

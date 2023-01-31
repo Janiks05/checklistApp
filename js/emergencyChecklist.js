@@ -74,6 +74,12 @@ function emergencyChecklist(typeOfEmergency) {
                 accept a police caution money.</li>
             <li>Preserve your own evidence!</li>
         </ul>`
+    } else if (typeOfEmergency == 'firebreakout') {
+        checklist.innerHTML = `<header> <h1 id="emergency-headline">Fire breakout</h1> <img src="./img/closeX.png" alt="" onclick="removeChecklist()"> </header> <div id="checklist-list"> <ul> <li>Stay calm</li> <li>Close the door of the room in which the fire has started</li> <ol> <li>Try to extinguish the fire with a fire extinguisher</li> <li>If the fire can't be put out, evacuate the building immediately</li> </ol> <li>Call the fire department</li> <li>Do not use the elevator</li> <li>If you are outside, go to a safe place and wait for the fire department</li> </ul> </div>`
+    } else if (typeOfEmergency == 'earthbreak') {
+        checklist.innerHTML = `<header> <h1 id="emergency-headline">Fire breakout</h1> <img src="./img/closeX.png" alt="" onclick="removeChecklist()"> </header> <div id="checklist-list"> <ul> <li>Stay calm</li> <li>Close the door of the room in which the fire has started</li> <ol> <li>Try to extinguish the fire with a fire extinguisher</li> <li>If the fire can't be put out, evacuate the building immediately</li> </ol> <li>Call the fire department</li> <li>Do not use the elevator</li> <li>If you are outside, go to a safe place and wait for the fire department</li> </ul> </div>`
+    } else if (typeOfEmergency == 'flooding') {
+        checklist.innerHTML = `<header> <h1 id="emergency-headline">Flooding</h1> <img src="./img/closeX.png" alt="" onclick="removeChecklist()"> </header> <div id="checklist-list"> <ul> <li>Stay calm</li> <li>Turn off electricity, gas and water</li> <li>If the water is rising quickly, evacuate the building immediately</li> <ol> <li>If driving, abandon the car and move to higher ground</li> <li>If on foot, move to higher ground</li> </ol> <li>Stay away from fast-moving water</li> <li>Call for help if necessary</li> </ul> </div>`
     }
 }
 
